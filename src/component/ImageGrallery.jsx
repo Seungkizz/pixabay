@@ -4,7 +4,8 @@ import styled from 'styled-components';
 
 const ImagesWrapper = styled.div`
   display: grid;
-  grid-template-columns: 130px 130px 130px;
+  z-index: 1;
+  grid-template-columns: 130px 130px 130px 130px;
   grid-gap: 160px;
   padding-right: 100px;
 `;

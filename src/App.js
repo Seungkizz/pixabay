@@ -27,8 +27,23 @@ const InputStyle = styled.input`
     outline: none;
     color: #333;
     font-size: 17px;
-
 `;
+const Footer = styled.div`
+    position : relative;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid #e4e4e4;
+    padding:1rem 0;
+    margin:1rem 0;
+    margin-top: 150px;
+
+    p{
+      font-size: 18px;
+      font-weight: 500;
+      text-align: center;
+    }
+`;
+
 function App() {
   const [fetchData, setFetchData] = useState([]);
   const ref = useRef();
@@ -57,7 +72,11 @@ function App() {
         <InputStyle type='text' placeholder='이미지를 검색해주세요!' ref={ref} />
       </FormStyle>
       <ImageGrallery fetchData={fetchData} />
+      <Footer>
+      <p>&copy;Seungki corp. All rights Reserved.</p>
+    </Footer>
     </Container>
+
   );
 }
 
