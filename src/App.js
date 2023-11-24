@@ -42,6 +42,7 @@ const Footer = styled.div`
       font-weight: 500;
       text-align: center;
     }
+    
 `;
 
 function App() {
