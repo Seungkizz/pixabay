@@ -19,11 +19,15 @@ const FormStyle = styled.form`
 
 `;
 const InputStyle = styled.input`
-    min-width: 360px;
+    min-width: 500px;
     padding: 5px 12px;
     margin-top: 30px;
     margin-bottom: 36px;
+    line-height: 1.5;
     outline: none;
+    color: #333;
+    font-size: 17px;
+
 `;
 function App() {
   const [fetchData, setFetchData] = useState([]);
